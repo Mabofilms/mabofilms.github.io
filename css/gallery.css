@@ -1,0 +1,71 @@
+
+
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.gallery > .gallery-container {
+	/* Minimum width of 24rem and grow to fit available space */
+	/*flex: 1 0 24rem;*/
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse 
+    margin: 1rem;*/
+    flex-grow: 1;
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+.gallery-container {
+
+    color: #444;
+}
+
+.gallery-image {
+	display: block;
+    /*width: 100%;
+    height: 243px;*/
+	object-fit: cover;
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-gap: 1px;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+@media(max-width:540px){
+    .gallery{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
