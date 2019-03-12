@@ -1,0 +1,60 @@
+#svg-logo{
+    overflow:visible;
+    width: 100%;
+}
+
+#hero-vid {
+    backface-visibility:hidden;
+    background:url("http://www.markhillard.com/sandbox/media/polina.jpg") no-repeat scroll 0 0 #000;
+    background-size:cover;
+    bottom:0;
+    height:auto;
+    min-height:100%;
+    min-width:100%;
+    perspective:1000;
+    position:fixed;
+    right:0;
+    width:auto;
+    z-index:-2;
+  }
+
+#header-logo{
+    overflow: visible;
+    width: 100%;
+}
+
+header{
+    height: 100vh;
+}
+
+.logo-wrapper{
+}
+
+.header-container{
+    height: 100vh;
+}
+
+.header-row {
+    height: 100vh;
+}
+
+#header-list{
+    color: rgba(255, 255, 255, 0.363);
+    /*text-align: right;*/
+    display:inline;
+}
+
+ul#header-list-id li {
+display: inline;
+z-index: 99;
+}
+
+#contactpaddingfloat {
+float: right;
+padding-right: 48px;
+}
+
+#header-list-id{
+font-size: 12pt;
+display: inline;
+}
