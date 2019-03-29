@@ -1,12 +1,12 @@
-#svg-logo{
-    overflow:visible;
-    width: 100%;
+#svg-logo {
+  overflow: visible;
+  width: 100%;
 }
 
+/*
 #hero-vid {
     backface-visibility:hidden;
-    background:url("http://www.markhillard.com/sandbox/media/polina.jpg") no-repeat scroll 0 0 #000;
-    background-size:cover;
+    background-size: auto;
     bottom:0;
     height:auto;
     min-height:100%;
@@ -17,44 +17,51 @@
     width:auto;
     z-index:-2;
   }
+*/
 
-#header-logo{
-    overflow: visible;
-    width: 100%;
+#header-logo {
+  overflow: visible;
+  width: 100%;
 }
 
-header{
-    height: 100vh;
-}
-
-.logo-wrapper{
-}
-
-.header-container{
-    height: 100vh;
+header {
 }
 
 .header-row {
-    height: 100vh;
-}
-
-#header-list{
-    color: rgba(255, 255, 255, 0.363);
-    /*text-align: right;*/
-    display:inline;
-}
-
-ul#header-list-id li {
-display: inline;
-z-index: 99;
+  height: 100vh;
 }
 
 #contactpaddingfloat {
-float: right;
-padding-right: 48px;
+  float: right;
+  padding-right: 48px;
 }
 
-#header-list-id{
-font-size: 12pt;
-display: inline;
+#header-container {
+  position: relative;
+  /* ... */
+}
+
+#header-container #hero-vid {
+  background-image: url(/img/headerbg.png) no-repeat scroll 0 0 black;
+}
+
+#header-container>*:not(#hero-vid) {
+  position: relative;
+  z-index: 5;
+}
+
+#hero-vid {
+  object-fit: cover;
+  position: absolute;
+  will-change: transform;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+.header-col {
+  margin-top: auto;
+  margin-bottom: 60vh;
 }
