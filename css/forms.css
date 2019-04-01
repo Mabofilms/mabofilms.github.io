@@ -138,3 +138,7 @@ label > input[type="radio"] {
 .modal-content{
     background-color: black;
 }
+
+#modalContactForm {
+    padding-left: 15px;;
+}

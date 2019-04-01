@@ -30,8 +30,7 @@
       <!--FULL VIDEO -->
       <div class="row d-none d-lg-block position-absolute h-100 w-100 p-0 m-0 ">
         <div class="col p-0 m-0 overflow-hidden vh-100">
-          <video class="visible-desktop " id="hero-vid" poster="/img/headerbg.png"
-            autoplay loop muted>
+          <video class="visible-desktop " id="hero-vid" poster="/img/headerbg.png" autoplay loop muted>
             <source type="video/mp4" src="/mp4/bgfullwebopt.mp4 ">
             </source>
           </video>
@@ -40,8 +39,7 @@
       <!--MOBILE VIDEO -->
       <div class="row d-xl-none d-lg-none position-absolute h-100 w-100 p-0 m-0">
         <div class="col p-0 m-0 overflow-hidden">
-          <video class="visible-desktop " id="hero-vid" poster="/img/headerbg.png"
-            autoplay loop muted>
+          <video class="visible-desktop " id="hero-vid" poster="/img/headerbg.png" autoplay loop muted>
             <source type="video/mp4" src="/mp4/bgmob.mp4">
             </source>
           </video>
@@ -78,54 +76,48 @@
   <div class="container-fluid gallery bg-dark pt-4 ">
     <div class="row text-lg-left bg-dark ">
       <div class="col-lg-4 col-12 px-0 p-md-3 bg-dark">
-        <img class="img-fluid rounded video-btn mb-4 d-block bg-dark" src="img/croat1280x720.jpg" alt="" data-toggle="modal"
-          data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
+        <img class="img-fluid rounded video-btn mb-4 d-block bg-dark" id="gal-thumb1" src="img/croat1280x720.jpg" alt=""
+          data-toggle="modal" data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
       </div>
+
       <div class="col-lg-4  col-12 px-0 p-md-3 bg-dark">
         <a href="#" class="d-block mb-4  ">
-          <img class="img-fluid rounded" src="img/bos1280x720.jpg" alt="">
+          <img class="img-fluid rounded video-btn mb-4 d-block bg-dark"  id="gal-thumb2"  src="img/bos1280x720.jpg" alt="">
         </a>
       </div>
       <div class="col-lg-4  col-12 px-0 p-md-3 bg-dark">
-        <img class="img-fluid rounded" src="img/jak1280x720.jpg" alt="">
+        <img class="img-fluid rounded video-btn mb-4 d-block bg-dark" id="gal-thumb3" src="img/jak1280x720.jpg" alt="">
       </div>
     </div>
   </div>
-
-
   <!-- Button trigger modal  TEST
   <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
     Play Vimeo Video
   </button>-->
-  
+
   <!-- VIDEO ?Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="video modal"
-    aria-hidden="true">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="video modal" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
 
         <div class="modal-body">
-
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
           <!-- 16:9 aspect ratio-->
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src=""  allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
-            id="video" allowscriptaccess="always"
-              allow="autoplay"></iframe>
+            <iframe class="embed-responsive-item" src="" allowfullscreen="allowfullscreen"
+              mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen"
+              oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" id="video"
+              allowscriptaccess="always" allow="autoplay"></iframe>
           </div>
-
         </div>
-
       </div>
     </div>
   </div>
-          
-
   </div>
 
-<!-- END VIDEO MODAL -->
+  <!-- END VIDEO MODAL -->
 
   <div class="row fixed-bottom p-3 mabo-footer float-right">
     <div class="col">
@@ -147,65 +139,66 @@
 
           <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-              <h1 class="display-2 display-2--light">Reach out for a new project or just say hello</h1>
+              <h1 class="display-2 display-2--light">Contact Me</h1>
             </div>
           </div>
 
           <div class="row contact-content" data-aos="fade-up">
+            <div class="col xs-4">
+              <div class="contact-primary">
 
-            <div class="contact-primary">
+                <h3 class="h6">Send Me A Message</h3>
 
-              <h3 class="h6">Send Me A Message</h3>
+                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                  <fieldset>
 
-              <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
-                <fieldset>
+                    <div class="form-field border-primary">
+                      <input name="contactName" type="text" id="contactName" placeholder="Your Name" value=""
+                        minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                      <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value=""
+                        required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                      <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value=""
+                        class="full-width">
+                    </div>
+                    <div class="form-field">
+                      <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50"
+                        required="" aria-required="true" class="full-width"></textarea>
+                    </div>
 
-                  <div class="form-field">
-                    <input name="contactName" type="text" id="contactName" placeholder="Your Name" value=""
-                      minlength="2" required="" aria-required="true" class="full-width">
-                  </div>
-                  <div class="form-field">
-                    <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value=""
-                      required="" aria-required="true" class="full-width">
-                  </div>
-                  <div class="form-field">
-                    <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value=""
-                      class="full-width">
-                  </div>
-                  <div class="form-field">
-                    <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50"
-                      required="" aria-required="true" class="full-width"></textarea>
-                  </div>
+                    <div class="form-field text-center">
+                      <button class="btn btn-outline-light center btn--primary"
+                        style="border-radius: 200px; width: 60px; height: 60px;"><i class="fa fa-paper-plane"
+                          aria-hidden="true"></i></button>
 
-                  <div class="form-field text-center">
-                    <button class="btn btn-outline-light center btn--primary"
-                      style="border-radius: 200px; width: 60px; height: 60px;">Submit</button>
-
-                    <div class="submit-loader">
-                      <div class="text-loader">Sending...</div>
-                      <div class="s-loader">
-                        <div class="bounce1"></div>
-                        <div class="bounce2"></div>
-                        <div class="bounce3"></div>
+                      <div class="submit-loader">
+                        <div class="text-loader">Sending...</div>
+                        <div class="s-loader">
+                          <div class="bounce1"></div>
+                          <div class="bounce2"></div>
+                          <div class="bounce3"></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                </fieldset>
-              </form>
+                  </fieldset>
+                </form>
 
-              <!-- contact-warning -->
-              <div class="message-warning">
-                Something went wrong. Please try again.
-              </div>
+                <!-- contact-warning -->
+                <div class="message-warning">
+                  Something went wrong. Please try again.
+                </div>
 
-              <!-- contact-success -->
-              <div class="message-success">
-                Your message was sent, thank you!<br>
-              </div>
+                <!-- contact-success -->
+                <div class="message-success">
+                  Your message was sent, thank you!<br>
+                </div>
 
-            </div> <!-- end contact-primary -->
-
+              </div> <!-- end contact-primary -->
+            </div>
           </div> <!-- end contact-info -->
         </div> <!-- end contact-secondary -->
 
