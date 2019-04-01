@@ -149,9 +149,8 @@
 
                 <h3 class="h6">Send Me A Message</h3>
 
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                <form data-netlify="true" name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
                   <fieldset>
-
                     <div class="form-field border-primary">
                       <input name="contactName" type="text" id="contactName" placeholder="Your Name" value=""
                         minlength="2" required="" aria-required="true" class="full-width">
@@ -169,8 +168,8 @@
                         required="" aria-required="true" class="full-width"></textarea>
                     </div>
 
-                    <div class="form-field text-center">
-                      <button class="btn btn-outline-light center btn--primary"
+                    <div class="form-field text-center pt-3">
+                      <button type="submit" class="btn btn-outline-light center btn--primary p-1"
                         style="border-radius: 200px; width: 60px; height: 60px;"><i class="fa fa-paper-plane"
                           aria-hidden="true"></i></button>
 
