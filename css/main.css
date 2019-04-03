@@ -15,3 +15,5 @@ html, body {
 .video-btn {
    opacity: 1;
 }
+
+.fa { font-family: 'FontAwesome' !important; };

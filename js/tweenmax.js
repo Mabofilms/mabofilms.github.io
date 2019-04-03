@@ -34,7 +34,7 @@ $(window).scroll( function(){
 var galThumbs = document.getElementsByClassName("video-btn");
 
 for(var i = galThumbs.length ; i--;){
-    galThumbs[i].animationIn = TweenLite.to("#" + galThumbs[i].id, 2, {opacity: 0.7});
+    galThumbs[i].animationIn = TweenLite.to("#" + galThumbs[i].id, 2, {opacity: 0.9});
     //galThumbs[i].animationOut = TweenLite.to("#" + galThumbs[i].id, 3, {opacity: 0.5});
     galThumbs[i].addEventListener('mouseover', AnimPlayIn );
     //galThumbs[i].addEventListener('mouseout', AnimPlayOut );
@@ -46,6 +46,7 @@ function AnimPlayIn(e) {
         e.target.animationIn.play(0);
     //}
 }
+
 function AnimPlayOut(e) {
     var anim = e.target.animationIn;
     //if( !anim.isActive()) {
