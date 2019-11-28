@@ -1,19 +1,26 @@
-html, body {
- background-color: black;
+html,
+body {
+  background-color: black;
 }
 
+.header__logo--center {
+  display: grid;
+  justify-content: center;
+}
 
 .btn-right {
-    z-index: 1030;
-    pointer-events: auto;
- }
+  z-index: 1030;
+  pointer-events: auto;
+}
 
 .mabo-footer {
-   pointer-events: none;
+  pointer-events: none;
 }
 
 .video-btn {
-   opacity: 1;
+  opacity: 1;
 }
 
-.fa { font-family: 'FontAwesome' !important; };
+.fa {
+  font-family: "FontAwesome" !important;
+}
