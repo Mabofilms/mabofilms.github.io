@@ -1,5 +1,6 @@
 html, body {
- background-color: black;
+ background-color: rgb(21, 21, 21);
+ color: whitesmoke;
 }
 
 
@@ -16,4 +17,88 @@ html, body {
    opacity: 1;
 }
 
-.fa { font-family: 'FontAwesome' !important; };
+.fa { 
+   font-family: 'FontAwesome' !important; 
+}
+
+.slogan__text {
+   font-family: 'Butterfly Kids';
+   font-size: 72px;
+}
+
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * services
+ * ------------------------------------------------------------------- */
+ /*
+ @media only screen and (max-width: 1200px) {
+   .services-list {
+       max-width: 1000px;
+   }
+   .services-list .service-item:nth-child(2n+1) {
+       padding-right: 30px;
+   }
+   .services-list .service-item:nth-child(2n+2) {
+       padding-left: 30px;
+   }
+}
+
+@media only screen and (max-width: 1000px) {
+   .services-list h3 {
+       font-size: 2.5rem;
+   }
+   .services-list .service-item:nth-child(2n+1) {
+       padding-right: 20px;
+   }
+   .services-list .service-item:nth-child(2n+2) {
+       padding-left: 20px;
+   }
+}
+
+@media only screen and (max-width: 800px) {
+   .services-list {
+       margin-top: 4.2rem;
+       max-width: 500px;
+       text-align: center;
+   }
+   .services-list .service-item:nth-child(n) {
+       padding-right: 15px;
+       padding-left: 15px;
+   }
+   .services-list h3 {
+       font-size: 3rem;
+   }
+   .services-list .service-text {
+       margin-left: 0;
+   }
+   .services-list .service-icon {
+       font-size: 4.5rem;
+       float: none;
+       margin-top: 0;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .s-services {
+       padding-top: 12rem;
+   }
+   .services-list .service-item:nth-child(n) {
+       padding-right: 10px;
+       padding-left: 10px;
+   }
+   .services-list h3 {
+       font-size: 2.5rem;
+   }
+}
+
+@media only screen and (max-width: 400px) {
+   .services-list .service-item:nth-child(n) {
+       padding-right: 0;
+       padding-left: 0;
+   }
+   .services-list h3 {
+       font-size: 2.5rem;
+   }
+} */
