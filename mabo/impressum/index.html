@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US" itemscope="itemscope" itemtype="https://schema.org/WebPage"><head><meta charset="UTF-8"><title>impressum – MABO – Emotion durch Film.</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="https://mabofilms.com/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="wp-block-library-theme-css" href="https://mabofilms.com/wp-includes/css/dist/block-library/theme.min.css" type="text/css" media="all"><link rel="stylesheet" id="eael-front-end-css" href="https://mabofilms.com/wp-content/uploads/essential-addons-elementor/eael-post-137.min.css" type="text/css" media="all"><link rel="stylesheet" id="font-awesome-css" href="https://mabofilms.com/wp-content/themes/oceanwp/assets/fonts/fontawesome/css/all.min.css" type="text/css" media="all"><link rel="stylesheet" id="simple-line-icons-css" href="https://mabofilms.com/wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css" type="text/css" media="all"><link rel="stylesheet" id="magnific-popup-css" href="https://mabofilms.com/wp-content/themes/oceanwp/assets/css/third/magnific-popup.min.css" type="text/css" media="all"><link rel="stylesheet" id="slick-css" href="https://mabofilms.com/wp-content/themes/oceanwp/assets/css/third/slick.min.css" type="text/css" media="all"><link rel="stylesheet" id="oceanwp-style-css" href="https://mabofilms.com/wp-content/themes/oceanwp/assets/css/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-icons-css" href="https://mabofilms.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-animations-css" href="https://mabofilms.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-frontend-css" href="https://mabofilms.com/wp-content/plugins/elementor/assets/css/frontend.min.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-pro-css" href="https://mabofilms.com/wp-content/plugins/elementor-pro/assets/css/frontend.min.css" type="text/css" media="all"><link rel="stylesheet" id="uael-frontend-css" href="https://mabofilms.com/wp-content/plugins/ultimate-elementor/assets/min-css/uael-frontend.min.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-global-css" href="https://mabofilms.com/wp-content/uploads/elementor/css/global.css" type="text/css" media="all"><link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&ver=5.3.3" type="text/css" media="all"><script type="text/javascript">
+/* <![CDATA[ */
+var uael_script = {"post_loader":"https:\/\/mabofilms.com\/wp-content\/plugins\/ultimate-elementor\/assets\/img\/post-loader.gif","url":"https:\/\/mabofilms.com\/wp-admin\/admin-ajax.php","search_str":"Search:","table_length_string":"Show _MENU_ Entries","uael_particles_url":"https:\/\/mabofilms.com\/wp-content\/plugins\/ultimate-elementor\/assets\/min-js\/uael-particles.min.js","particles_url":"https:\/\/mabofilms.com\/wp-content\/plugins\/ultimate-elementor\/assets\/lib\/particles\/particles.min.js"};
+var uael = {"ajax_url":"https:\/\/mabofilms.com\/wp-admin\/admin-ajax.php"};
+var uaelRegistration = {"invalid_mail":"Enter valid Email!","pass_unmatch":"The specified password do not match!","required":"This Field is required!","form_nonce":"ad5fa30b01"};
+/* ]]> */
+</script><script type="text/javascript" src="https://mabofilms.com/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://mabofilms.com/wp-includes/js/jquery/jquery-migrate.min.js"></script><script type="text/javascript">
+window.scope_array = [];
+			window.backend = 0;
+			jQuery.cachedScript = function( url, options ) {
+				// Allow user to set any option except for dataType, cache, and url.
+				options = jQuery.extend( options || {}, {
+					dataType: "script",
+					cache: true,
+					url: url
+				});
+				// Return the jqXHR object so we can chain callbacks.
+				return jQuery.ajax( options );
+			};
+		    jQuery( window ).on( "elementor/frontend/init", function() {
+				elementorFrontend.hooks.addAction( "frontend/element_ready/global", function( $scope, $ ){
+					if ( "undefined" == typeof $scope ) {
+							return;
+					}
+					if ( $scope.hasClass( "uael-particle-yes" ) ) {
+						window.scope_array.push( $scope );
+						$scope.find(".uael-particle-wrapper").addClass("js-is-enabled");
+					}else{
+						return;
+					}
+					if(elementorFrontend.isEditMode() && $scope.find(".uael-particle-wrapper").hasClass("js-is-enabled") && window.backend == 0 ){		
+						var uael_url = uael_script.uael_particles_url;
+						
+						jQuery.cachedScript( uael_url );
+						window.backend = 1;
+					}else if(elementorFrontend.isEditMode()){
+						var uael_url = uael_script.uael_particles_url;
+						jQuery.cachedScript( uael_url ).done(function(){
+							var flag = true;
+						});
+					}
+				});
+			});
+			jQuery(document).ready(function(){
+				if ( jQuery.find( ".uael-particle-yes" ).length < 1 ) {
+					return;
+				}
+				var uael_url = uael_script.uael_particles_url;
+				jQuery.cachedScript = function( url, options ) {
+					// Allow user to set any option except for dataType, cache, and url.
+					options = jQuery.extend( options || {}, {
+						dataType: "script",
+						cache: true,
+						url: url
+					});
+					// Return the jqXHR object so we can chain callbacks.
+					return jQuery.ajax( options );
+				};
+				jQuery.cachedScript( uael_url );
+			});	
+</script><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #111111; }
+</style><style type="text/css" id="wp-custom-css">
+			header{display:none;height:0}		</style><style type="text/css">
+/* Header CSS */#site-header,.has-transparent-header .is-sticky #site-header,.has-vh-transparent .is-sticky #site-header.vertical-header,#searchform-header-replace{background-color:#0a0a0a}#site-header.has-header-media .overlay-header-media{background-color:rgba(0,0,0,0.5)}/* Sidebar CSS */.widget-area{padding:0!important}.widget-title{margin-bottom:17px}
+</style></head><body class="page-template-default page page-id-137 custom-background wp-embed-responsive oceanwp-theme sidebar-mobile no-header-border default-breakpoint content-full-width content-max-width page-header-disabled has-breadcrumbs elementor-default elementor-page elementor-page-137" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+	
+	<div id="outer-wrap" class="site clr">
+
+		
+		<div id="wrap" class="clr">
+
+			
+			
+<header id="site-header" class="minimal-header clr" data-height="0" itemscope="itemscope" itemtype="https://schema.org/WPHeader"><div id="site-header-inner" class="clr container">
+
+				
+				
+
+<div id="site-logo" class="clr" itemscope itemtype="https://schema.org/Brand">
+
+	
+	<div id="site-logo-inner" class="clr">
+
+				
+	</div>
+
+	
+	
+</div>
+
+
+				
+			</div>
+
+			
+			
+		
+				
+	
+</header><main id="main" class="site-main clr"><div id="content-wrap" class="container clr">
+
+		
+		<div id="primary" class="content-area clr">
+
+			
+			<div id="content" class="site-content clr">
+
+				
+				
+<article class="single-page-article clr"><div class="entry clr" itemprop="text">
+				<div data-elementor-type="wp-page" data-elementor-id="137" class="elementor elementor-137" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section data-particle_enable="false" class="elementor-element elementor-element-54742cc elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="54742cc" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-397d648 elementor-column elementor-col-100 elementor-top-column" data-id="397d648" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-131260f elementor-widget elementor-widget-text-editor" data-id="131260f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1 style="color: #ffffff; font-family: Times; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: center;">Impressum</h1><h2 style="color: #ffffff; font-family: Times; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: center;">Angaben gemäß § 5 TMG</h2><p style="color: #ffffff; font-family: Times; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align: center;">Maximilian Bolle<br>Merseburgerstr. 38B<br>04177 Leipzig</p><h2 style="color: #ffffff; font-family: Times; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: center;">Kontakt</h2><p style="color: #ffffff; font-family: Times; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align: center;">Telefon: 017620634929<br>E-Mail: mabofilms@gmail.com</p><h2 style="color: #ffffff; font-family: Times; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: center;">Umsatzsteuer-ID</h2><p style="color: #ffffff; font-family: Times; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align: center;">Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>97581403673</p><p style="color: #ffffff; font-family: Times; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align: center;">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p><h3 style="color: #ffffff; font-family: Times; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: center;">Haftung für Inhalte</h3><p style="color: #ffffff; font-family: Times; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align: center;">Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p><p style="color: #ffffff; font-family: Times; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align: center;">Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p><h3 style="color: #ffffff; font-family: Times; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: center;">Haftung für Links</h3><p style="color: #ffffff; font-family: Times; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align: center;">Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.</p><p style="color: #ffffff; font-family: Times; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align: center;">Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p><h3 style="color: #ffffff; font-family: Times; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: center;">Urheberrecht</h3><p style="color: #ffffff; font-family: Times; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align: center;">Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section></div>
+			</div>
+		</div>
+			</div>
+</article></div>
+
+			
+		</div>
+
+		
+	</div>
+
+	
+
+        </main></div>
+
+    
+</div>
+
+
+
+<a id="scroll-top" class="scroll-top-right" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+<div id="sidr-close">
+	<a href="#" class="toggle-sidr-close">
+		<i class="icon icon-close"></i><span class="close-text">Close Menu</span>
+	</a>
+</div>
+    
+    
+<div id="mobile-menu-search" class="clr">
+	<form method="get" action="https://mabofilms.com/" class="mobile-searchform">
+		<input type="search" name="s" autocomplete="off" placeholder="Search"><button type="submit" class="searchform-submit">
+			<i class="icon icon-magnifier"></i>
+		</button>
+					</form>
+</div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var localize = {"ajaxurl":"https:\/\/mabofilms.com\/wp-admin\/admin-ajax.php","nonce":"15b06d9870","ParticleThemesData":{"default":"{\"particles\":{\"number\":{\"value\":160,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":true,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"repulse\"},\"onclick\":{\"enable\":true,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nasa":"{\"particles\":{\"number\":{\"value\":250,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":1,\"random\":true,\"anim\":{\"enable\":true,\"speed\":1,\"opacity_min\":0,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":4,\"size_min\":0.3,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":1,\"direction\":\"none\",\"random\":true,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":600}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":250,\"size\":0,\"duration\":2,\"opacity\":0,\"speed\":3},\"repulse\":{\"distance\":400,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","bubble":"{\"particles\":{\"number\":{\"value\":15,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#1b1e34\"},\"shape\":{\"type\":\"polygon\",\"stroke\":{\"width\":0,\"color\":\"#000\"},\"polygon\":{\"nb_sides\":6},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":50,\"random\":false,\"anim\":{\"enable\":true,\"speed\":10,\"size_min\":40,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":200,\"color\":\"#ffffff\",\"opacity\":1,\"width\":2},\"move\":{\"enable\":true,\"speed\":8,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":false,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","snow":"{\"particles\":{\"number\":{\"value\":450,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#fff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":500,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":2},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"bottom\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":0.5}},\"bubble\":{\"distance\":400,\"size\":4,\"duration\":0.3,\"opacity\":1,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nyan_cat":"{\"particles\":{\"number\":{\"value\":150,\"density\":{\"enable\":false,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"star\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"http:\/\/wiki.lexisnexis.com\/academic\/images\/f\/fb\/Itunes_podcast_icon_300.jpg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":4,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":14,\"direction\":\"left\",\"random\":false,\"straight\":true,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":200,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}"}};
+/* ]]> */
+</script><script type="text/javascript" src="https://mabofilms.com/wp-content/uploads/essential-addons-elementor/eael-post-137.min.js"></script><script type="text/javascript" src="https://mabofilms.com/wp-includes/js/imagesloaded.min.js"></script><script type="text/javascript" src="https://mabofilms.com/wp-content/themes/oceanwp/assets/js/third/magnific-popup.min.js"></script><script type="text/javascript" src="https://mabofilms.com/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+var oceanwpLocalize = {"isRTL":"","menuSearchStyle":"drop_down","sidrSource":"#sidr-close, #site-navigation, #mobile-menu-search","sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"icon","verticalHeaderTarget":"icon","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select"};
+/* ]]> */
+</script><script type="text/javascript" src="https://mabofilms.com/wp-content/themes/oceanwp/assets/js/main.min.js"></script><script type="text/javascript" src="https://mabofilms.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js"></script><script type="text/javascript" src="https://mabofilms.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js"></script><script type="text/javascript">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/mabofilms.com\/wp-admin\/admin-ajax.php","nonce":"1f0d825b1e","shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"delicious":{"title":"Delicious"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""}};
+</script><script type="text/javascript" src="https://mabofilms.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js"></script><script type="text/javascript" src="https://mabofilms.com/wp-includes/js/jquery/ui/position.min.js"></script><script type="text/javascript" src="https://mabofilms.com/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js"></script><script type="text/javascript" src="https://mabofilms.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js"></script><script type="text/javascript" src="https://mabofilms.com/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js"></script><script type="text/javascript">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.8.2","urls":{"assets":"https:\/\/mabofilms.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes"},"editorPreferences":[]},"post":{"id":137,"title":"impressum","excerpt":""}};
+</script><script type="text/javascript" src="https://mabofilms.com/wp-content/plugins/elementor/assets/js/frontend.min.js"></script></body></html>
